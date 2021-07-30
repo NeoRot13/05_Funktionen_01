@@ -34,3 +34,4 @@ function ausgabeNamenParam(firstName)
 ausgabeNamenParam("Welt"); // --> Argument(e) args
 ausgabeNamenParam("Mars");
 ausgabeNamenParam("Sonne");
+ausgabeNamenParam(prompt("Bitte Vornamen eingeben:"));
