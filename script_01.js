@@ -8,7 +8,7 @@
 // Funktionsrumpf (body) | callee
 function test()
 {
-    console.log("Hallo Welt!");
+    console.log("Hallo Frat!");
 }
 
 /********** Funktionen 02a **********/
@@ -16,7 +16,7 @@ function test()
 
 function ausgabeNamen() 
 {
-    const firstName = "Welt"; // Variable --> lokal scope
+    const firstName = "Frat"; // Variable --> lokal scope
     console.log("Hallo " + firstName + "!");
 }
 
@@ -28,10 +28,16 @@ function ausgabeNamen()
 
 function ausgabeNamenParam(firstName)
 {
+    if (firstName == "" || firstName == undefined)
+    {
+        firstName = "Nobody"
+    }
+ 
     console.log("Hallo " + firstName + "!");
 }
 
-ausgabeNamenParam("Welt"); // --> Argument(e) args
-ausgabeNamenParam("Mars");
-ausgabeNamenParam("Sonne");
+// ausgabeNamenParam("Frat"); // --> Argument(e) args
+// ausgabeNamenParam("Andreas");
+// ausgabeNamenParam("Neilos");
 ausgabeNamenParam(prompt("Bitte Vornamen eingeben:"));
+ausgabeNamenParam();
